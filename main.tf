@@ -90,6 +90,7 @@ resource "aws_instance" "runner" {
       "export frontend_port=${var.frontend_port}",
       "export backend_port=${var.backend_port}",
       "export my_name=${var.my_name}",
+      "export MONGODB_URI=${var.my_name}",
       "chmod +x /tmp/setup_script.sh",
       "sh /tmp/setup_script.sh"
     ]

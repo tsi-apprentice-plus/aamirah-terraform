@@ -37,3 +37,7 @@ variable "frontend_port" {
 variable "pem_path" {
   type = string
 }
+
+variable "mongodb_uri" {
+  type = string
+}
